@@ -1,0 +1,183 @@
+/* ******************BODY************************* */
+body{
+    margin: 0;
+    background-color:white;
+    padding:0;
+}
+body>div{
+    position:relative;
+    margin: 0;
+    padding:0;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+.style1{
+    font-weight: 200;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.style2{
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* HEADER */
+
+
+header{
+    display: flex;
+    justify-content:center;
+    border-bottom: 2px solid black;
+    /* background-color: red; */
+    /* height: 65vh; */
+    /* opacity: 0.6;
+    background-image: url(https://images.ctfassets.net/lzny33ho1g45/O6Ns6DttUzJym7rhGiD36/b7f1086976213ffd1076f4c1b15b6500/best-todo-list-apps-00-hero.png);
+    background-size:contain ;
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+    position:relative; 
+    z-index:1;
+    height:16%;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: url(https://images.ctfassets.net/lzny33ho1g45/O6Ns6DttUzJym7rhGiD36/b7f1086976213ffd1076f4c1b15b6500/best-todo-list-apps-00-hero.png); */
+    background: url(https://www.ubuntupit.com/wp-content/uploads/2019/06/best-to-do-list-apps-for-Android.jpg);
+
+    background-size:contain;
+    opacity: .4;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 100%;
+}
+main>div>p{
+    display: flex;
+    justify-content:center;
+    border-bottom: 2px solid black;
+}
+footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    padding: 0;
+    margin:0;
+    /* border: 2px solid black; */
+    text-align: center;
+    box-sizing: border-box;
+    /* background:linear-gradient(#d27f19,#e5e80cf2); */
+    background:linear-gradient(#d27f19b5,#e5e80cd1);
+    
+    
+    
+
+}
+footer i{
+    color:black;
+}
+body main{
+    margin-top:22px;
+}
+body>div{
+    margin-left: 30vw;
+    /* margin-top:10vh; */
+    width: 31vw;
+    height: 100%;
+    background-color: white;
+}
+#todos{
+    overflow-y:scroll;
+    max-height: 71%;
+    overflow-x: hidden;
+
+}
+ul{
+    margin-left: 3px;
+    margin-top: 2px;
+    padding: 0px;
+}
+
+/* SCROLL BAR DESIGNING */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-button{
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .tasks-section{
+      display: flex;
+      position: relative;
+      background-color:rgba(128, 128, 128, 0.055);
+
+      /* background-image:linear-gradient(#d3d3d300,#80008096);  */
+      box-shadow: 0px 0px 20px 2px rgb(224 226 63 / 65%);  
+
+    }
+    .tasks-section:hover{
+        box-shadow: 0px 0px 20px 2px rgb(224 226 63 / 91%);  
+  
+      }
+  
+
+    .dust a img:hover{
+      border-radius: 50%;
+    box-shadow: 0px 0px 3px 1px red;  
+
+
+  }
+  .ele-margins{
+      margin-top: 0px;
+  }
+  .ele-margins2{
+    margin-left: 10px;
+
+  }
+  .font-w{
+      font-size:1rem;
+      font-family:monospace;
+  }
+  .margins3{
+      margin-top: 10px;
+      margin-left:150px;
+      /* border: 2px solid black; */
+      position: absolute;
+      right: 5px;
+  }
+/* .category-dust{
+    width:
+    display: flex;
+    justify-content:space-around;
+} */
+  /* .margins4{
+    margin-top: 5px;
+    margin-left:10px;
+    
+  } */
+
+  /* #icons{
+      background-image: url("");
+      height:50px;
+      width:50px;
+  } */

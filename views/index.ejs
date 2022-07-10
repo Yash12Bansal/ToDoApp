@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+        crossorigin="anonymous"
+      />
+
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"> -->
+    </head>
+    <body>
+        <div>
+<!-- ******************************HEADER**************************** -->
+            <header>
+
+                <div class="bg"></div>
+                <div style='margin-top:15px;'><img src="images/todo.png" height="50px" width="50px"></div>
+                
+                <p style='font-size: 1.5rem; font-style: italic; font-weight:bold'>TODO App</p>
+
+            </header>
+
+
+            <!-- **********************************MAIN***************************** -->
+            
+            <main>
+                <!-- <div>
+                    <p style='font-size: 1rem; font-style: italic;'>List Of Tasks</p>
+                </div> -->
+
+                <div id='todos'>
+                    <% if (to_do.length ==0) { %>
+                            <img src="images/notask.png" height="100%" width="100%">
+                    <% } else{%>
+
+
+                    <ul>
+                        <% for (let i of to_do) { %>
+
+                            <li type='none'>
+                                <div style='text-align: right; margin-right: 5px;' class='dust'>
+                                    <a href='/delete/?id=<%= i.id %>'>
+                                        <img src="images/x-button.png" height="15px" width='15px' class='dust'>
+                                        <!-- <i class="fas fa-trash-alt"></i> -->
+                                </a>
+                            </div>
+
+                            <!-- **********************EACH TASK ASSIGNED LIST************************** -->
+                            <div class='tasks-section'>
+
+                                <div id='icons'>
+
+
+                                    <% if (i.category =='School') { %>
+                                        <img src="images/open-book.png" height="40px" width="40px" />
+                                        <% }%> <% if (i.category =='Other') { %>
+                                        <img src="images/unknown.png" height="40px" width="40px" />
+                                        <% }%> <% if (i.category =='Personal') { %>
+                                        <img
+                                          src="images/bussiness-man.png"
+                                          height="40px"
+                                          width="40px"
+                                        />
+                                        <% }%> <% if (i.category =='Cleaning') { %>
+                                        <img src="images/sweep.png" height="40px" width="40px" />
+                                        <% }%> <% if (i.category =='Work') { %>
+                                        <img src="images/non-stop.png" height="40px" width="40px" />
+                                        <% }%>
+
+            
+                                </div>
+
+                                <div>
+                                    <p class='ele-margins ele-margins2 style2'><%= i.description %></p>
+                                    <p class='ele-margins ele-margins2 style2'><img src="images/schedule.png" height="20px" width="20px" >
+                                        <%=JSON.stringify(i.date).substring(1,11) %></p>
+                                </div>
+
+                                <div>
+                                    <p class='margins3'>
+                                        <span class='style1'>
+                                            <%= i.category %>
+                                        </span>
+                                    </p>
+                                </div>
+                                </div>
+                            </li>
+        
+                        <% } %>
+                    </ul>
+                <%}%>
+                </div>
+            </main>
+<!-- *************************FOOTER************************ -->
+            <a href='/details'>
+                <footer>
+                    <i class="fas fa-plus-square fa-3x"></i>
+                </footer>
+            </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/details.css" />
+  </head>
+  <body>
+    <div>
+      <!--********** HEADER **********************-->
+      <header>
+        <div class="bg"></div>
+        <a href="/">
+          <button id="back-button">
+            <img src="images/back.png" height="20px" width="20px" /></button
+        ></a>
+        <div style="margin-top: 15px">
+          <img src="images/todo.png" height="50px" width="50px" />
+        </div>
+
+        <p style="font-size: 1.5rem; font-style: italic; font-weight: bold">
+          TODO App
+        </p>
+      </header>
+      <main>
+        <div class="bg2"></div>
+
+        <!-- ***********************FORM **************************  -->
+
+        <form action="details/create-todo" method="POST">
+          <div>
+            <div class="headings">Description</div>
+            <input type="text" name="description" class="ele" required />
+          </div>
+
+          <div>
+            <div class="headings">Category</div>
+            <select name="category" class="ele">
+              <option value="Personal">Personal</option>
+              <option value="Work">Work</option>
+              <option value="School">School</option>
+              <option value="Cleaning">Cleaning</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <div class="headings">Due Date</div>
+            <input type="date" name="date" class="ele" required />
+          </div>
+
+          <button id="add-task" type="submit"><span>Add Task</span></button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
